@@ -1,0 +1,612 @@
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 33
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/users/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+"POST /api/users/register HTTP/1.1" 500 69713
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 33
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 33
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 33
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 90
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 90
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 90
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/users/register/
+"POST /api/users/register/ HTTP/1.1" 500 61
+Internal Server Error: /api/stores/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stores_store.name_store
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\stores\views.py", line 16, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: stores_store.name_store
+"GET /api/stores/ HTTP/1.1" 500 173433
+Internal Server Error: /api/stores/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stores_store.name_store
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\stores\views.py", line 16, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: stores_store.name_store
+"GET /api/stores/ HTTP/1.1" 500 173570
+Internal Server Error: /api/stores/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: stores_store.name_store
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\stores\views.py", line 16, in get
+    return Response(serializer.data, status=status.HTTP_200_OK)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: stores_store.name_store
+"GET /api/stores/ HTTP/1.1" 500 173570
+Internal Server Error: /admin/stores/store/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Store has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\stores\models.py", line 106, in __str__
+    return self.name
+           ^^^^^^^^^
+AttributeError: 'Store' object has no attribute 'name'
+"GET /admin/stores/store/ HTTP/1.1" 500 362668
+Internal Server Error: /admin/stores/store/add/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1865, in _changeform_view
+    form_validated = form.is_valid()
+                     ^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._post_clean()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\forms\models.py", line 498, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\base.py", line 1626, in full_clean
+    self.clean()
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\stores\models.py", line 99, in clean
+    raise ValueError(f"Subcategory '{self.subcategory}' is not valid for category '{self.category}'.")
+ValueError: Subcategory '„ «Ã— «·„ÃÊÂ—«  «·–Â»Ì…' is not valid for category 'jewelry_accessories'.
+"POST /admin/stores/store/add/ HTTP/1.1" 500 149155
+Internal Server Error: /admin/reviews/review/
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: review has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 346, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 322, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 313, in __init__
+    super().__init__(*items)
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 218, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\env\Lib\site-packages\django\contrib\admin\options.py", line 1030, in action_checkbox
+    _("Select this object for an action - {}"), str(obj)
+                                                ^^^^^^^^
+  File "C:\Users\Elite\Desktop\ain\ein_backend\ein_backend\reviews\models.py", line 14, in __str__
+    return f"{self.customer.name} rated {self.store.name} ({self.rating} stars)"
+                                         ^^^^^^^^^^^^^^^
+AttributeError: 'Store' object has no attribute 'name'
+"GET /admin/reviews/review/ HTTP/1.1" 500 363789
