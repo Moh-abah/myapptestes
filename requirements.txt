@@ -32,12 +32,14 @@ google-resumable-media==2.7.2
 googleapis-common-protos==1.66.0
 grpcio==1.70.0
 grpcio-status==1.70.0
+gunicorn==23.0.0
 httplib2==0.22.0
 hyperlink==21.0.0
 idna==3.10
 incremental==24.7.2
 msgpack==1.1.0
 oauthlib==3.2.2
+packaging==24.2
 pillow==11.1.0
 proto-plus==1.26.0
 protobuf==5.29.3
