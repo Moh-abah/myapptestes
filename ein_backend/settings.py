@@ -200,6 +200,7 @@ LOGGING = {
 WSGI_APPLICATION = 'ein_backend.wsgi.application'
 ASGI_APPLICATION = 'ein_backend.asgi.application'
 
+
 # settings.py
 # settings.py
 
