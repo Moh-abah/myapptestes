@@ -202,12 +202,4 @@ ASGI_APPLICATION = 'ein_backend.asgi.application'
 # settings.py
 # settings.py
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [('127.0.0.1', 9780)],
-        },
-    },
-}
 
