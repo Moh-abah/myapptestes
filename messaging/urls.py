@@ -1,6 +1,6 @@
 from django.urls import include, path
 from messaging import routing
-from messaging.views import ChatDetailView, ChatttDetailView, ChattttnewListCreateView, CheckOrCreateChatView, FinalGetMessagesAPIView, FinalyGetChatsListAPIView, MessageDetailView, MessageList, MessageListCreateView, RetrieveChatsAPIView, SendMessageView, GetMessagesWithMerchantView, GetConversationsView, CreateChatView, finalCheckChatAPIView, finalCreateChatAPIView, finalSendMessageAPIView, getChatsAPIView, getMessagesAPIView, withlastmassegRetrieveChatsAPIView
+from messaging.views import ChatDetailView, ChatttDetailView, ChattttnewListCreateView, CheckOrCreateChatView,  MessageDetailView, MessageListCreateView, RetrieveChatsAPIView, SendMessageView, GetMessagesWithMerchantView, GetConversationsView, CreateChatView,  finalCreateChatAPIView
 
 
 urlpatterns = [
@@ -34,16 +34,8 @@ urlpatterns = [
 
     path('finalcreate-chat/', finalCreateChatAPIView.as_view(), name='create-chat'),
     path('getchats/', RetrieveChatsAPIView.as_view(), name='getts-chat'),
-    path('getchatswithlastmasseg/', withlastmassegRetrieveChatsAPIView.as_view(), name='getts-chat'),
-    path('finalsend-message/', finalSendMessageAPIView.as_view(), name='send-message'),
-    path('finalcheck-chat/<int:customer_id>/<int:store_id>/', finalCheckChatAPIView.as_view(), name='check-chat'),
-    path('get-chats/<int:customer_id>/', getChatsAPIView.as_view(), name='get-chats'),
-    #path('get-messages/<int:chat_id>/', getMessagesAPIView.as_view(), name='get-messages'),
-    path('get-messages/<int:chat_id>/', FinalGetMessagesAPIView.as_view(), name='get_messages'),
-    path('masseg-list/<int:chat_id>/', MessageList.as_view(), name='get_messages'),
+  
 
-
-    path('GetChatsList/', FinalyGetChatsListAPIView.as_view(), name='get-chatsList'),
 
     
     
