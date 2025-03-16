@@ -26,97 +26,6 @@ from messaging import models
 logger = logging.getLogger(__name__)
 
 User = get_user_model()
-"""
-class SendMessageView(APIView):
-    
-    View لإرسال الرسائل من المستخدم الحالي إلى تاجر محدد.
-    
-
-    def post(self, request, merchant_id):
-        
-        معالجة طلب POST لإرسال رسالة.
-        
-        # تحقق مما إذا كان التاجر ينتمي إلى مجموعة "merchants"
-        try:
-            merchant = User.objects.get(id=merchant_id)
-        except User.DoesNotExist:
-            return Response({"error": "التاجر غير موجود."}, status=status.HTTP_404_NOT_FOUND)
-
-        # التحقق من انتماء التاجر إلى مجموعة "merchants"
-        if not merchant.groups.filter(name="merchants").exists():
-            return Response({"error": "التاجر لا ينتمي إلى مجموعة التجار."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # إضافة معرف المستقبل إلى البيانات
-        data = request.data.copy()
-        data['receiver'] = merchant_id
-
-        # استخدام Serializer للتحقق
-        serializer = MessageSerializer(data=data, context={'request': request})
-
-        if serializer.is_valid():
-            # استدعاء الخدمة لإنشاء الرسالة
-            create_message(serializer.validated_data, request.user)
-            return Response({"message": "تم إرسال الرسالة بنجاح."}, status=status.HTTP_200_OK)
-
-        # إرجاع الأخطاء في حال فشل التحقق
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-class GetMessagesWithMerchantView(APIView):
-    
-    عرض الرسائل بين العميل والتاجر.
-    
-    def get(self, request, merchant_id):
-        user = request.user  # العميل الحالي
-        
-        # التحقق إذا كان التاجر موجودًا في النظام
-        try:
-            merchant = User.objects.get(id=merchant_id)
-        except User.DoesNotExist:
-            return Response({"error": "التاجر غير موجود."}, status=status.HTTP_404_NOT_FOUND)
-        
-        # التحقق إذا كان التاجر ينتمي لمجموعة "merchants"
-        if not merchant.groups.filter(name="merchants").exists():
-            return Response({"error": "التاجر لا ينتمي إلى مجموعة التجار."}, status=status.HTTP_400_BAD_REQUEST)
-
-        # استرجاع الرسائل بين العميل والتاجر
-        messages = messaging.objects.filter(
-            (Q(sender=user) & Q(receiver=merchant)) |
-            (Q(sender=merchant) & Q(receiver=user))
-        ).order_by('created_at')  # ترتيب الرسائل حسب تاريخ الإرسال
-
-        # تسلسل الرسائل
-        serializer = MessageSerializer(messages, many=True)
-        
-        return Response(serializer.data, status=status.HTTP_200_OK)
-class GetConversationsView(APIView):
-    
-    عرض جميع التجار الذين تواصل معهم العميل.
-    
-    def get(self, request):
-        user = request.user  # العميل الحالي
-        
-        # استرجاع جميع التجار الذين تواصل معهم العميل
-        conversations = messaging.objects.filter(
-            Q(sender=user) | Q(receiver=user)
-        ).distinct().values('sender', 'receiver')
-
-        # الحصول على تجار فقط (التأكد من أن المرسل أو المستقبل ينتمي لمجموعة "merchants")
-        merchants_ids = set()
-        for conversation in conversations:
-            if conversation['sender'] != user.id:
-                merchants_ids.add(conversation['sender'])
-            else:
-                merchants_ids.add(conversation['receiver'])
-        
-        # جلب المستخدمين الذين هم تجار
-        merchants = User.objects.filter(id__in=merchants_ids, groups__name="merchants")
-
-        # عرض التجار
-        merchant_data = [{"id": merchant.id, "name": merchant.name} for merchant in merchants]
-        
-        return Response(merchant_data, status=status.HTTP_200_OK)
-        
-        
-"""
 
 
 
@@ -143,38 +52,6 @@ class SendMessageView(APIView):
         # إرجاع الرسالة التي تم إنشاؤها مع تفاصيلها
         return Response(MessageSerializer(message).data, status=status.HTTP_201_CREATED)
 
-"""
-class SendMessageView(APIView):
-    
-    إرسال رسالة مع إنشاء المحادثة إذا لم تكن موجودة.
-    
-
-    def post(self, request, merchant_id):
-        # التحقق من التاجر
-        merchant = get_merchant_or_404(merchant_id)
-        user = request.user
-
-        # ترتيب المستخدمين
-        user1, user2 = (user, merchant) if user.id < merchant.id else (merchant, user)
-
-        # التحقق أو إنشاء المحادثة
-        chat, created = Chat.objects.get_or_create(user1=user1, user2=user2)
-
-        # إرسال الرسالة
-        data = request.data.copy()
-        data['chat'] = chat.id  # ربط الرسالة بالمحادثة
-        serializer = MessageSerializer(data=data, context={'request': request})
-
-        if serializer.is_valid():
-            message = create_message(serializer.validated_data, user)
-            chat.last_message = serializer.validated_data['content']
-            chat.save()
-            return Response({"message": "تم إرسال الرسالة بنجاح."}, status=status.HTTP_200_OK)
-
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        
-        
-        """
 
 class GetMessagesWithMerchantView(APIView):
     def get(self, request, merchant_id):
