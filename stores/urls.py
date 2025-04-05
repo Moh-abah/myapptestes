@@ -6,6 +6,6 @@ urlpatterns = [
     path('', StoreListView.as_view(), name='store_list'),  
     path('<int:store_id>/', StoreDetailsView.as_view(), name='store_details'),
     path('search/', SearchStoresView.as_view(), name='search_stores'),
-    path('stordash/<int:merchant_id>/', GetStoresByMerchantView.as_view(), name='store-detail-by-user'),
+    path('stordash/<int:merchant_id>/profil/', GetStoresByMerchantView.as_view(), name='store-detail-by-user'),
     path('stordata/<int:user_id>/', StoreDetailsView.as_view(), name='stordata'),
 ]
