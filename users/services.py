@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import ValidationError
-
+from django.http import JsonResponse
 from users.serializers import LoginSerializer, UserSerializer
 from .models import CustomUser  # تحديث الاستيراد
 
@@ -85,3 +85,8 @@ def login_user(request):
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+
+
+
+def health_check(request):
+    return JsonResponse({"status": "ok"})

@@ -1,4 +1,6 @@
 from django.urls import path
+
+from users.services import health_check
 from .views import SendOTPView, UserDetailView, UserListView, VerifyOTPView, RegisterView, LoginUserView, UpdateUserView, ffLoginView, finalLoginView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from django.urls import path
@@ -20,5 +22,7 @@ urlpatterns = [
     #path('login/', finalLoginView.as_view(), name='login'),
     path('fflogin/', ffLoginView.as_view(), name='fflogin'),
     path('otheruser/<int:user_id>/', UserDetailView.as_view(), name='otheruser'),
+
+    path('status/health-check/', health_check),
     
 ]
