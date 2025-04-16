@@ -108,9 +108,24 @@ TEMPLATES = [
 
 
 
+#DATABASES = {
+#   'default': dj_database_url.config(default='postgresql://moh:opOlM7NqPoKUjoZm2dei4nuneAyoY5rw@dpg-d001r349c44c73fd37s0-a.oregon-postgres.render.com/dbpost_43ld')
+#}
+
 DATABASES = {
-    'default': dj_database_url.config(default='postgresql://moh:opOlM7NqPoKUjoZm2dei4nuneAyoY5rw@dpg-d001r349c44c73fd37s0-a.oregon-postgres.render.com/dbpost_43ld')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbpost_43ld',
+        'USER': 'moh',
+        'PASSWORD': 'opOlM7NqPoKUjoZm2dei4nuneAyoY5rw',
+        'HOST': 'dpg-d001r349c44c73fd37s0-a.oregon-postgres.render.com',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',  # تأكد من إضافة هذا الخيار
+        }
+    }
 }
+
 
 
 # Password validation
